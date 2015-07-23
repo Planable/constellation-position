@@ -1,0 +1,9 @@
+<template name="Constellation_position">
+
+  <div class="constellation-menu-button-container constellation-positioner"><span class="constellation-menu-button {{active 'lr' 'left'}} constellation-toggle-lr" title="Left">L</span><span class="constellation-menu-button {{active 'lr' 'right'}} constellation-toggle-lr" title="Right">R</span><span class="constellation-menu-button {{active 'tb' 'top'}} constellation-toggle-tb" title="Top">T</span><span class="constellation-menu-button {{active 'tb' 'bottom'}} constellation-toggle-tb" title="Bottom">B</span></div>
+
+</template>
+
+<template name="Constellation_trigger_target">
+  <div class="constellation-trigger-target {{#unless constellationActive}}hide-constellation-trigger-target{{/unless}}" style="left:{{position 'lr' 'left'}};right:{{position 'lr' 'right'}};top:{{position 'tb' 'top'}};bottom:{{position 'tb' 'bottom'}}" title="Show Constellation">C</div>
+</template>
