@@ -9,6 +9,7 @@ Constellation.addTab({
   name: 'Position',
   id: 'position',
   headerContentTemplate: 'Constellation_position',
+  guideContentTemplate: 'Constellation_position_guide',
   noOpen:true,
   onClick: "positionCloseConstellation",
   title: "Hide Constellation",
