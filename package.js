@@ -1,23 +1,32 @@
 Package.describe({
-  name: 'constellation:position',
-  version: '0.4.7',
-  summary: 'Positioning plugin for Constellation',
-  git: 'https://github.com/JackAdams/constellation-position.git',
-  documentation: 'README.md',
-  debugOnly: true
+  name: "planable:position",
+  version: "0.4.11",
+  summary: "Positioning plugin for Constellation",
+  git: "https://github.com/Planable/constellation-position.git",
+  documentation: "README.md",
+  debugOnly: true,
 });
 
-Package.onUse(function(api) {
-  api.versionsFrom('1.0');
+Package.onUse(function (api) {
+  api.versionsFrom("2.3");
 
-  api.use(['templating','blaze','tracker','underscore','reactive-dict'], 'client');
-  api.use('constellation:console@1.4.7', 'client');
+  api.use(
+    [
+      "templating@1.4.1",
+      "blaze@2.5.0",
+      "tracker",
+      "underscore",
+      "reactive-dict",
+    ],
+    "client"
+  );
+  api.use("planable:console@1.4.9", "client");
 
-  api.addFiles('position-client.css','client');
-  api.addFiles('position-client.html','client');
-  api.addFiles('position-client.js','client');
-  
-  api.imply('constellation:console');
+  api.addFiles("position-client.css", "client");
+  api.addFiles("position-client.html", "client");
+  api.addFiles("position-client.js", "client");
+
+  api.imply("planable:console");
 });
 
 Package.onTest(function(api) {

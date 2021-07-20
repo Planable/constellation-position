@@ -1,6 +1,6 @@
 // Hook in to constellation UI
 
-var Constellation = Package["constellation:console"].API;
+var Constellation = Package["planable:console"].API;
 
 var initialLRvalue = localStorage.constellation_position_lr || 'left';
 var initialTBvalue = localStorage.constellation_position_tb || 'bottom';
